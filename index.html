@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Capricho | Pasteles Artesanales</title>
+    <meta name="description" content="Pasteles artesanales para celebrar tus momentos especiales. Encuentra pasteles, postres y dulces tradicionales hechos con amor.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Dulce Capricho</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#sucursales">Sucursales</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section id="inicio" class="hero">
+        <div class="hero-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="img/pexels-danedelions-1120970.jpg" alt="Pastel de chocolate decorado">
+                    <div class="slide-content">
+                        <h2>Pasteles para Compartir</h2>
+                        <p>Elige el pastel o postre ideal para tus ocasiones especiales y eventos</p>
+                        <div class="hero-buttons">
+                            <a href="#productos" class="btn btn-primary">Ver Productos</a>
+                            <a href="#contacto" class="btn btn-secondary">Pedir Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/pexels-felicity-tai-7966511.jpg" alt="Pasteles variados">
+                    <div class="slide-content">
+                        <h2>Sabores Únicos</h2>
+                        <p>Descubre nuestra variedad de pasteles artesanales</p>
+                        <div class="hero-buttons">
+                            <a href="#productos" class="btn btn-primary">Explorar</a>
+                            <a href="#sucursales" class="btn btn-secondary">Visítanos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/pexels-roman-odintsov-5897459.jpg" alt="Pastel de fresas">
+                    <div class="slide-content">
+                        <h2>Hechos con Amor</h2>
+                        <p>Cada pastel está preparado con los mejores ingredientes</p>
+                        <div class="hero-buttons">
+                            <a href="#nosotros" class="btn btn-primary">Conócenos</a>
+                            <a href="#contacto" class="btn btn-secondary">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-indicators">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="products-grid">
+                <div class="product-card" data-product-id="1" data-product-name="Pasteles" data-product-price="250">
+                    <div class="product-image">
+                        <img src="img/pexels-polina-tankilevitch-4109998.jpg" alt="Pastel de Chocolate">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pasteles</h3>
+                        <p>Pasteles artesanales en diferentes sabores y tamaños</p>
+                        <span class="price">Desde $250</span>
+                        <button class="add-to-cart-btn btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="2" data-product-name="Pays" data-product-price="180">
+                    <div class="product-image">
+                        <img src="img/pexels-elli-559179-1854652.jpg" alt="Pay de frutas">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pays</h3>
+                        <p>Pays frescos con frutas de temporada</p>
+                        <span class="price">Desde $180</span>
+                        <button class="add-to-cart-btn btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="3" data-product-name="Mousses" data-product-price="120">
+                    <div class="product-image">
+                        <img src="img/pexels-valeriya-1639567.jpg" alt="Mousse de chocolate">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mousses</h3>
+                        <p>Mousses ligeros y cremosos</p>
+                        <span class="price">Desde $120</span>
+                        <button class="add-to-cart-btn btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="4" data-product-name="Gelatinas" data-product-price="80">
+                    <div class="product-image">
+                        <img src="img/pexels-jessbaileydesign-853005.jpg" alt="Gelatinas artesanales">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gelatinas</h3>
+                        <p>Gelatinas decoradas para toda ocasión</p>
+                        <span class="price">Desde $80</span>
+                        <button class="add-to-cart-btn btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="5" data-product-name="Postres Especiales" data-product-price="200">
+                    <div class="product-image">
+                        <img src="img/pexels-quang-nguyen-vinh-222549-2144200.jpg" alt="Postres especiales">
+                    </div>
+                    <div class="product-info">
+                        <h3>Postres Especiales</h3>
+                        <p>Creaciones únicas para momentos especiales</p>
+                        <span class="price">Desde $200</span>
+                        <button class="add-to-cart-btn btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="6" data-product-name="Pan Dulce" data-product-price="15">
+                    <div class="product-image">
+                        <img src="img/pexels-vojtech-okenka-127162-1055271.jpg" alt="Pan dulce">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pan Dulce</h3>
+                        <p>Pan dulce tradicional recién horneado</p>
+                        <span class="price">Desde $15</span>
+                        <button class="add-to-cart-btn btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre Dulce Capricho</h2>
+                    <p>Somos una pastelería artesanal con más de 15 años de experiencia creando dulces momentos para nuestras familias. Cada pastel está hecho con ingredientes frescos y mucho amor.</p>
+                    <p>Nuestra misión es endulzar tus celebraciones con productos de la más alta calidad y un servicio excepcional.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Años de Experiencia</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50K+</h3>
+                            <p>Clientes Felices</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>Productos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="img/pexels-zvolskiy-1721934.jpg" alt="Pastelera decorando un pastel">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section id="sucursales" class="branches">
+        <div class="container">
+            <h2 class="section-title">Visítanos en Nuestras Sucursales</h2>
+            <div class="branches-grid">
+                <div class="branch-card">
+                    <h3>Sucursal Centro</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Principal #123, Centro Histórico</p>
+                    <p><i class="fas fa-phone"></i> (222) 123-4567</p>
+                    <p><i class="fas fa-clock"></i> Lun-Dom: 8:00 AM - 9:00 PM</p>
+                </div>
+                <div class="branch-card">
+                    <h3>Sucursal Norte</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Norte #456, Col. Jardines</p>
+                    <p><i class="fas fa-phone"></i> (222) 234-5678</p>
+                    <p><i class="fas fa-clock"></i> Lun-Dom: 8:00 AM - 9:00 PM</p>
+                </div>
+                <div class="branch-card">
+                    <h3>Sucursal Sur</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Blvd. Sur #789, Col. Flores</p>
+                    <p><i class="fas fa-phone"></i> (222) 345-6789</p>
+                    <p><i class="fas fa-clock"></i> Lun-Dom: 8:00 AM - 9:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¿Necesitas servicio a domicilio?</h3>
+                    <p>Comunícate con nosotros para verificar si tenemos cobertura en tu zona.</p>
+                    <div class="contact-methods">
+                        <a href="https://walink.co/e7dec1" target="_blank" class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>249 172 5430</span>
+                        </a>
+                        <a href="tel:+522211959921" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>221 195 9921</span>
+                        </a>
+                        <a href="tel:+522381501369" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>238 150 1369</span>
+                        </a>
+                        <a href="mailto:info@dulcecapricho.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@dulcecapricho.com</span>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <h4>Síguenos en:</h4>
+                        <div class="social-icons">
+                            <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://resendiz1.github.io/landing2/" target="_blank" class="social-icon"><i class="fas fa-briefcase"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Tu correo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Tu teléfono">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tu mensaje" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscríbete a nuestro boletín</h2>
+            <p>Recibe ofertas especiales y noticias de nuevos productos</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit" class="btn btn-primary">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dulce Capricho</h3>
+                    <p>Pasteles artesanales para celebrar tus momentos especiales.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#sucursales">Sucursales</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Aviso de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Devoluciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dulce Capricho. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Social Media Buttons -->
+    <div class="floating-social">
+        <a href="https://walink.co/e7dec1" target="_blank" class="floating-btn whatsapp" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank" class="floating-btn facebook" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="floating-btn instagram" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="floating-btn twitter" title="X (Twitter)">
+            <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://resendiz1.github.io/landing2/" target="_blank" class="floating-btn portfolio" title="Portfolio">
+            <i class="fas fa-briefcase"></i>
+        </a>
+    </div>
+
+    <!-- Shopping Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Carrito de Compras</h3>
+            <button id="close-cart" class="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items">
+            <div class="cart-empty">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Tu carrito está vacío</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button id="checkout-btn" class="btn btn-primary" disabled>Proceder al Pago</button>
+            <button id="clear-cart" class="btn btn-secondary">Vaciar Carrito</button>
+        </div>
+    </div>
+
+    <!-- Cart Toggle Button -->
+    <button id="cart-toggle" class="cart-toggle">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count" class="cart-count">0</span>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("m202FJpgz8JlMhJrh");
+        })();
+    </script>
+
+    <script src="my_scripts.js" defer></script>
+
+</body>
+</html>
