@@ -553,7 +553,7 @@ const shoppingCart = {
         ).join('\n');
         
         const message = `¡Hola! Quiero realizar un pedido:\n\n${items}\n\nTotal: $${total.toFixed(2)}`;
-        const whatsappUrl = `https://wa.me/5222491725430?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/522211959921?text=${encodeURIComponent(message)}`;
         
         window.open(whatsappUrl, '_blank');
         this.showNotification('Redirigiendo a WhatsApp para completar tu pedido...');
